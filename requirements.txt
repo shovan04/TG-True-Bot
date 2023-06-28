@@ -4,12 +4,12 @@ charset-normalizer
 click
 colorama
 Flask
+gunicorn
 idna
 itsdangerous
 Jinja2
 MarkupSafe
 phonenumbers
-python-dotenv
 requests
 truecallerpy
 urllib3

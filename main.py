@@ -62,10 +62,3 @@ def index():
         return 'Message sent successfully<br>' + r.text
     else:
         return 'Failed to send message'+r.text
-
-
-<<<<<<< HEAD
-=======
-if __name__ == '__main__':
-    APP.run()
->>>>>>> a9663686c7626f9811ed46361e50b6e66dccff0a

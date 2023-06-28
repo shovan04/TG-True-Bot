@@ -5,11 +5,11 @@ import requests as REQ
 from flask import request
 
 from truecallerpy import search_phonenumber
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-dotenv_path = os.path.join(BASE_DIR, '.env.key')
-load_dotenv(dotenv_path)
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# dotenv_path = os.path.join(BASE_DIR, '.env.key')
+# load_dotenv(dotenv_path)
 
 
 APP = flask.Flask(__name__)

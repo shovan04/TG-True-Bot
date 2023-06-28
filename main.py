@@ -1,24 +1,23 @@
 import os
 import flask
-import re
 import requests as REQ
 from flask import request
-
 from truecallerpy import search_phonenumber
 
-
-APP = flask.Flask(__name__)
+app = flask.Flask(__name__)
 TGURL = f"https://api.telegram.org/bot{os.getenv('BOT_TOKEN')}/sendMessage"
 
 pattern = r'^\d{10}$'
 
 id = os.getenv('API_KEY')
 
-@APP.route('/')
+
+@app.route('/')
 def home():
     return "It works 🙂"
 
-@APP.route('/getinfo/', methods=['GET', 'POST'])
+
+@app.route('/getinfo/', methods=['GET', 'POST'])
 def index():
     msg = ''
     body = request.get_json()

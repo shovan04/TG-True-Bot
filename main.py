@@ -19,6 +19,11 @@ pattern = r'^\d{10}$'
 
 id = os.getenv('API_KEY')
 
+
+@APP.route('/', methods=['GET', 'POST'])
+def home():
+    return "It Works 🙂"
+
 @APP.route('/getinfo/', methods=['GET', 'POST'])
 def index():
     msg = ''

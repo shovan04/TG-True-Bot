@@ -15,10 +15,16 @@ pattern = r'^\d{10}$'
 id = os.getenv('API_KEY')
 
 
+<<<<<<< HEAD
 @APP.route('/')
 def home():
     return "It works 🙂"
 
+=======
+@APP.route('/', methods=['GET', 'POST'])
+def home():
+    return "It Works 🙂"
+>>>>>>> a9663686c7626f9811ed46361e50b6e66dccff0a
 
 @APP.route('/getinfo/', methods=['GET', 'POST'])
 def index():
@@ -66,3 +72,8 @@ def index():
         return 'Failed to send message'+r.text
 
 
+<<<<<<< HEAD
+=======
+if __name__ == '__main__':
+    APP.run()
+>>>>>>> a9663686c7626f9811ed46361e50b6e66dccff0a
